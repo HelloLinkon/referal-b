@@ -15,7 +15,7 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="css/responsive.css" rel="stylesheet" type="text/css">
 	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-	<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css">
+	<!-- <link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css"> -->
 	  <style>
 
   .intro {
@@ -156,7 +156,11 @@
 			<div class="clear"></div>
 		</div>
 	</div>
-
+  <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+  <script src="js/jquery.appear.js"></script>
+  <script src="js/bootstrap.js" type="text/javascript"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/app1.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script>
@@ -164,31 +168,62 @@
 			$("#btn").click(function () {
 				$("#edit").addClass("intro");
 				$("#formOverlay").css("display" , "none");
+        // $("#03 input").focus();
 
 			});
 
-		 $(function() {
-          $.scrollify({
-            section : ".single-scroll",
-          });
-        });
+
+      // scroll control
+      // if($("#01 input").val() == "")
+      // {
+      //   $(".form-right-pannel").addClass("stop-scrolling");
+      // }
+
+      $("#01 input").keyup(function(){
+        $(".form-right-pannel").removeClass("stop-scrolling");
+      });
+
+      $(".form-right-pannel").scroll(function(){
+        // console.log("scroll: "+ $("#01 input").val());
+        if($("#02 input").val() != "")
+        {
+          console.log("choluk");
+          $(".form-right-pannel").removeClass("stop-scrolling");
+        }
+        else{
+          console.log("stop");
+          $(".form-right-pannel").addClass("stop-scrolling");
+        }
+      });
+      // else {
+      //   $(".form-right-pannel").removeClass("stop-scrolling");
+      // }
+
+      // document.getelementbyId('#03 input').focus();
+		 // $(function() {
+     //      $.scrollify({
+     //        section : ".single-scroll",
+     //      });
+     //    });
 		$('#myScrollspy').on('activate.bs.scrollspy', function () {
    var activeSection = $(this).find("li.active a").attr("href");
 
 	 if(activeSection === "#01")
    {
-       $('#01 .form-hide-overlay').css("display" , "none");
+    $('#01 .form-hide-overlay').css("display" , "none");
 	  $('#02 .form-hide-overlay').css("display" , "block");
 	  $('#03 .form-hide-overlay').css("display" , "block");
 	  $('#04 .form-hide-overlay').css("display" , "block");
    }
    if(activeSection === "#02")
    {
+     console.log("value: "+ $("#01 input").val());
        $('#01 .form-hide-overlay').css("display" , "block");
 	  $('#02 .form-hide-overlay').css("display" , "none");
 	  $('#03 .form-hide-overlay').css("display" , "block");
 	  $('#04 .form-hide-overlay').css("display" , "block");
    }
+
    if(activeSection === "#03")
    {
        $('#01 .form-hide-overlay').css("display" , "block");
@@ -213,27 +248,8 @@
 
 		});
 	</script>
-	<script src="js/particles.js"></script>
-<script src="js/app.js"></script>
-<script>
-  var count_particles, stats, update;
-  stats = new Stats;
-  stats.setMode(0);
-  stats.domElement.style.position = 'absolute';
-  stats.domElement.style.left = '0px';
-  stats.domElement.style.top = '0px';
-  document.body.appendChild(stats.domElement);
-  count_particles = document.querySelector('.js-count-particles');
-  update = function () {
-    stats.begin();
-    stats.end();
-    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-    requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
-</script>
+
+
 
 
 </body>

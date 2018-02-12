@@ -91,19 +91,21 @@
     </div>
     <div class="landing-footer">
       <div class="welcome-page">
-        <h1 class="animated hiding welcome-text"  data-animation="zoomInLeft">WELCOME TO BITHEMOTH THE GREATEST BLOCKCHAIN PLATFORM IN THE WORLD </h1>
-        @if (Route::has('login'))
+          @if (Route::has('login'))
           @if (Auth::check())
             <div class="welcomt-bttn">
                 <div class="welcomt-bttn welcome-abttn"> <a class="green animated hiding" data-delay="300" data-animation="bounceInLeft" href="javascript:void(0);">Read our whitepaper</a> <a class="light-green animated hiding" data-delay="900" data-animation="bounceInLeft" href="{{ url('/form') }}">Register for our whitelist</a><a class="blue animated hiding" data-delay="1500" data-animation="bounceInLeft"href="javascript:void(0);">Join our Telegram</a></div>
             </div>
+            <h1 class="animated hiding">To gain access to our limited presale, please register for our whitelist</h1>
           @else
             <div class="welcomt-bttn">
               <a class=" animated hiding" data-animation="bounceInLeft" href="javascript:void(0);" data-toggle="modal" data-target="#myModal1">JOIN A REVOLUTION</a>
             </div>
-
+            <h1 class="animated hiding"  data-animation="zoomInLeft">WELCOME TO BITHEMOTH</h1>
+            <h1 class="animated hiding welcome-text">THE GREATEST BLOCKCHAIN PLATFORM IN THE WORLD</h1>
           @endif
         @endif
+
       </div>
     </div>
 
