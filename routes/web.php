@@ -15,8 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/form', function () {
-    return view('form');
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('form', 'PagesController@showForm');
+    Route::post('form', 'PagesController@saveForm');
 });
 
 Auth::routes();
