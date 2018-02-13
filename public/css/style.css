@@ -332,6 +332,26 @@ h1.welcome-text{font-size:21px; margin:0; 	}
     font-size: 28px;
     margin-top: 0;
 }
+.input-note {
+    width: 60%;
+    padding-top: 10px;
+    color: #717171;
+}
+
+.select-country {
+    width: 60%;
+    height: 32px;
+    color: #000;
+    border: 1px solid #6bc289;
+    border-radius: 4px;
+    padding-left: 8px;
+}
+
+.form-div .form-box1 p {
+    color: rgb(50, 170, 91);
+    font-size: 17px;
+    font-weight: normal;
+}
 
 .stop-scrolling {
   height: 100%;
