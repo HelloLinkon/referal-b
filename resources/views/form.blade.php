@@ -472,27 +472,27 @@
 
                                 <div class="list-box">
                                     <div class="form-group">
-                                        <input type="radio" class="checkbox" id="cm" name="hear_source">
+                                        <input type="radio" class="checkbox" id="cm" value="CoinMarketCap.com" name="hear_source">
                                         <label class="label" for="cm">CoinMarketCap.com</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="radio" class="checkbox" id="twi" name="hear_source">
+                                        <input type="radio" class="checkbox" id="twi" value="Twitter" name="hear_source">
                                         <label class="label" for="twi">Twitter</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="radio" class="checkbox" id="fb" name="hear_source">
+                                        <input type="radio" class="checkbox" id="fb" value="Facebook" name="hear_source">
                                         <label class="label" for="fb">Facebook</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="radio" class="checkbox" id="bt" name="hear_source">
+                                        <input type="radio" class="checkbox" id="bt" value="BitcoinTalk" name="hear_source">
                                         <label class="label" for="bt">BitcoinTalk</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="radio" class="checkbox" id="redd" name="hear_source">
+                                        <input type="radio" class="checkbox" id="redd" value="Reddit" name="hear_source">
                                         <label class="label" for="redd">Reddit</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="radio" class="checkbox" id="nw" name="hear_source">
+                                        <input type="radio" class="checkbox" id="nw" value="NewsWebsite" name="hear_source">
                                         <label class="label" for="nw">NewsWebsite</label>
                                     </div>
                                     <div class="clear"></div>
