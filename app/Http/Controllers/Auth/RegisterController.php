@@ -72,7 +72,7 @@ class RegisterController extends Controller
             if($referrer == null) $ref = null;
 
             DB::beginTransaction();
-            try {
+//            try {
                 while(true) {
                     $referrer->referral_count += 1;
                     $referrer->save();
@@ -81,11 +81,11 @@ class RegisterController extends Controller
 
                     $referrer = User::where('affiliate_id', $referrer->referred_by)->first();
                 }
-            } catch (\Exception $e) {
+     /*       } catch (\Exception $e) {
                 dd($e->getMessage());
                 DB::rollBack();
                 die("Some errors");
-            }
+            }*/
             DB::commit();
         }
         Cookie::queue(Cookie::forget('referral'));
