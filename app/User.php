@@ -26,4 +26,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function formData()
+    {
+        return $this->hasMany(FormData::class, 'user_id');
+    }
 }

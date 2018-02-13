@@ -44,7 +44,7 @@ class RegisterController extends Controller
     /**
      * Get a validator for an incoming registration request.
      *
-     * @param  array  $data
+     * @param  array $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
     protected function validator(array $data)
@@ -59,26 +59,21 @@ class RegisterController extends Controller
     /**
      * Create a new user instance after a valid registration.
      *
-     * @param  array  $data
+     * @param  array $data
      * @return User
      */
     protected function create(array $data)
     {
         $ref = Cookie::has('referral') ? Cookie::get('referral') : null;
 
-        if($ref != null) {
+        if ($ref != null) {
             $referrer = User::where('affiliate_id', $ref)->first();
-
-            if($referrer == null) $ref = null;
 
             DB::beginTransaction();
             try {
-                while(true) {
+                if ($referrer) {
                     $referrer->referral_count += 1;
                     $referrer->save();
-
-                    if($referrer->referred_by == null) break;
-
                     $referrer = User::where('affiliate_id', $referrer->referred_by)->first();
                 }
             } catch (\Exception $e) {
@@ -94,7 +89,7 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
             'affiliate_id' => str_random(16),
-            'referred_by'   => $ref
+            'referred_by' => $ref
         ]);
     }
 }
