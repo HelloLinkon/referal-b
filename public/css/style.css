@@ -326,7 +326,7 @@ h1.welcome-text{font-size:21px; margin:0; 	}
     background-color: transparent;
 }
 
-.form-div .form-box1{background:rgba(255, 255, 255, 1); width:calc(100% - 60px); margin:0 30px; position:absolute; bottom:30px; height:calc(100% - 280px); padding:30px; box-sizing:border-box; overflow:hidden; box-shadow:1px 1px 4px #B5B5B5;}
+.form-div .form-box1{background:rgba(255, 255, 255, 1); width:calc(100% - 60px); margin:0 30px; position:absolute; bottom:30px; height:calc(100% - 280px); padding:30px; box-sizing:border-box; overflow:scroll; box-shadow:1px 1px 4px #B5B5B5;}
 .form-div .form-box1 h1 {
     color: #32aa5b;
     font-size: 28px;
@@ -356,4 +356,9 @@ h1.welcome-text{font-size:21px; margin:0; 	}
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #e7e7e7;
+    background: #56b863;
 }

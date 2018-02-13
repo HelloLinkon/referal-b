@@ -43,7 +43,7 @@
 
 
       			</div>
-            <div class="form-box">
+            <div class="form-box1">
               @yield('content')
             </div>
 
