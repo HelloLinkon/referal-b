@@ -82,6 +82,7 @@ class RegisterController extends Controller
                     $referrer = User::where('affiliate_id', $referrer->referred_by)->first();
                 }
             } catch (\Exception $e) {
+                dd($e->getMessage());
                 DB::rollBack();
                 die("Some errors");
             }
