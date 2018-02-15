@@ -66,6 +66,14 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .home__text{
+              position: absolute;
+              /* font-size: 22px; */
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+            }
         </style>
     </head>
     <body>
@@ -88,29 +96,34 @@
     <div class="count-particles">
       <div class="head-logo">
         <img src="images/logo.png" alt="logo">
-        @if (Route::has('login'))
-          @if (Auth::check())
-          <h2 style="
-      text-align: center;
-      color: white;
-      font-size: 19px;
-  ">REGISTER FOR OUR WHITELIST FOR.</h2>
-          @else
-          <h2 style="
-      text-align: center;
-      color: white;
-      font-size: 19px;
-  ">JOIN NOW FOR FREE TRADING.</h2>
-          @endif
-        @endif
 
-            <h2 style="
-        text-align: center;
-        color: white;
-        font-size: 19px;
-    margin: 0;">ZERO TRADING FEES.</h2>
       </div>
 
+
+    </div>
+    <div class="home__text">
+      @if (Route::has('login'))
+        @if (Auth::check())
+        <h1 class="welcome-text" style="
+    text-align: center;
+    color: white;
+    font-size: 24px;
+
+">REGISTER FOR OUR WHITELIST TO BE ELIGIBLE FOR</h1>
+        @else
+        <h1 class="welcome-text" style="
+    text-align: center;
+    color: white;
+    font-size: 24px;
+">JOIN NOW FOR FREE TRADING.</h1>
+        @endif
+      @endif
+
+          <h1 class="welcome-text" style="
+      text-align: center;
+      color: white;
+      font-size: 24px;
+  margin: 0;">ZERO TRADING FEES.</h1>
     </div>
     <div class="landing-footer">
       <div class="welcome-page">
@@ -150,13 +163,14 @@
             <!-- <video width="100%" height="100%" controls>
               <source src="https://www.youtube.com/watch?v=SqiuJbPEXL8">
             </video> -->
-            <iframe allowfullscreen="allowfullscreen"
+            <!-- <iframe allowfullscreen="allowfullscreen"
         mozallowfullscreen="mozallowfullscreen"
         msallowfullscreen="msallowfullscreen"
         oallowfullscreen="oallowfullscreen"
         webkitallowfullscreen="webkitallowfullscreen" width="100%" height="600px"
 src="https://www.youtube.com/embed/ZyDN3VouZJ8">
-</iframe>
+</iframe> -->
+            <div id="player"></div>
           </div>
         </div>
 
@@ -169,6 +183,7 @@ src="https://www.youtube.com/embed/ZyDN3VouZJ8">
   <script src="js/bootstrap.js" type="text/javascript"></script>
   <script src="js/particles.js"></script>
   <script src="js/app1.js"></script>
+  <script src="http://www.youtube.com/player_api"></script>
   <script>
     var count_particles, stats, update;
     stats = new Stats;
@@ -187,6 +202,35 @@ src="https://www.youtube.com/embed/ZyDN3VouZJ8">
       requestAnimationFrame(update);
     };
     requestAnimationFrame(update);
+
+    // create youtube player
+        var player;
+        function onYouTubePlayerAPIReady() {
+            player = new YT.Player('player', {
+              height: '600',
+              width: '100%',
+              videoId: 'ZyDN3VouZJ8',
+              events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
+              }
+            });
+        }
+
+        // autoplay video
+        function onPlayerReady(event) {
+            // event.target.playVideo();
+        }
+
+        // when video ends
+        function onPlayerStateChange(event) {
+            if(event.data === 0) {
+                // alert('done');
+                window.location.href = "https://bithemoth.com/register";
+            }
+        }
+
+
   </script>
     </body>
 </html>
