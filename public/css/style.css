@@ -191,6 +191,10 @@ canvas{
 	.form-div .form-box{height:calc(100% - 205px)}
 	.input-form-group input, .input-form-group textarea{width:100%}
 	.form-div .form-box{margin-top:-40px;}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	    border-color: #e7e7e7;
+	    background: #56b863;
+	}
 }
 @media only screen and (min-width: 300px) and (max-width: 480px) {
 .form-div .form-box h1{font-size:20px;}
@@ -356,9 +360,4 @@ h1.welcome-text{font-size:21px; margin:0; 	}
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
-}
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: #e7e7e7;
-    background: #56b863;
 }

@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Referral</title>
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+        <title>HOME</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -74,7 +74,7 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">My Account</a>
                     @else
                         <a href="{{ url('/login') }}">Login</a>
                         <a href="{{ url('/register') }}">Register</a>
@@ -87,14 +87,40 @@
   <div id="particles-js"></div>
     <div class="count-particles">
       <div class="head-logo">
-        <img src="images/logo.png" alt="logo"> </div>
+        <img src="images/logo.png" alt="logo">
+        @if (Route::has('login'))
+          @if (Auth::check())
+          <h2 style="
+      text-align: center;
+      color: white;
+      font-size: 19px;
+  ">REGISTER FOR OUR WHITELIST FOR.</h2>
+          @else
+          <h2 style="
+      text-align: center;
+      color: white;
+      font-size: 19px;
+  ">JOIN NOW FOR FREE TRADING.</h2>
+          @endif
+        @endif
+
+            <h2 style="
+        text-align: center;
+        color: white;
+        font-size: 19px;
+    margin: 0;">ZERO TRADING FEES.</h2>
+      </div>
+
     </div>
     <div class="landing-footer">
       <div class="welcome-page">
           @if (Route::has('login'))
           @if (Auth::check())
             <div class="welcomt-bttn">
-                <div class="welcomt-bttn welcome-abttn"> <a class="green animated hiding" data-delay="300" data-animation="bounceInLeft" href="javascript:void(0);">Read our whitepaper</a> <a class="light-green animated hiding" data-delay="900" data-animation="bounceInLeft" href="{{ url('/form') }}">Register for our whitelist</a><a class="blue animated hiding" data-delay="1500" data-animation="bounceInLeft"href="javascript:void(0);">Join our Telegram</a></div>
+                <div class="welcomt-bttn welcome-abttn">
+                  <a class="green  hiding" data-delay="300" data-animation="bounceInLeft" href="javascript:void(0);">Read our whitepaper</a>
+                  <a class="light-green  hiding" data-delay="900" data-animation="bounceInLeft" href="{{ url('/form') }}">Register for our whitelist</a>
+                  <a class="blue  hiding" data-delay="1500" data-animation="bounceInLeft"href="javascript:void(0);">Join our Telegram</a></div>
             </div>
             <h1 class="animated hiding">To gain access to our limited presale, please register for our whitelist</h1>
           @else
@@ -103,6 +129,7 @@
             </div>
             <h1 class="animated hiding"  data-animation="zoomInLeft">WELCOME TO BITHEMOTH</h1>
             <h1 class="animated hiding welcome-text">THE GREATEST BLOCKCHAIN PLATFORM IN THE WORLD</h1>
+            <h1 class="animated hiding welcome-text">SECURE. SAFE. LIVE SUPPORT. DECENTRALIZATION. HARDWARE WALLET. DEBIT CARD. FIAT. FAIR. LEVERAGES. </h1>
           @endif
         @endif
 
@@ -123,8 +150,12 @@
             <!-- <video width="100%" height="100%" controls>
               <source src="https://www.youtube.com/watch?v=SqiuJbPEXL8">
             </video> -->
-            <iframe width="100%" height="600px"
-src="https://www.youtube.com/embed/SqiuJbPEXL8">
+            <iframe allowfullscreen="allowfullscreen"
+        mozallowfullscreen="mozallowfullscreen"
+        msallowfullscreen="msallowfullscreen"
+        oallowfullscreen="oallowfullscreen"
+        webkitallowfullscreen="webkitallowfullscreen" width="100%" height="600px"
+src="https://www.youtube.com/embed/ZyDN3VouZJ8">
 </iframe>
           </div>
         </div>
