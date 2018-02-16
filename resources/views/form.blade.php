@@ -78,7 +78,7 @@
                 <div>
                     <h1>Bithemoth Whitelist :</h1>
                     <div id="edit">
-                        <p>We enable you to migrate your business to blockchain.</p>
+                        <p>An all-encompassing exchange platform set to revolutionize the the blockchain market.</p>
                         <p>We respect your privacy.</p>
                         <p>Your information wil not be sold or shared.</p>
                         <a class="button" id="btn" style="padding:15px 25px;">Enter Details</a>
