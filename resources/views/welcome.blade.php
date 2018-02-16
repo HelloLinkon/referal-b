@@ -131,9 +131,9 @@
           @if (Auth::check())
             <div class="welcomt-bttn">
                 <div class="welcomt-bttn welcome-abttn">
-                  <a class="green  hiding" data-delay="300" data-animation="bounceInLeft" href="javascript:void(0);">Read our whitepaper</a>
+                  <a class="green  hiding" data-delay="300" data-animation="bounceInLeft" href="whitepaper.pdf" target="_blank">Read our whitepaper</a>
                   <a class="light-green  hiding" data-delay="900" data-animation="bounceInLeft" href="{{ url('/form') }}">Register for our whitelist</a>
-                  <a class="blue  hiding" data-delay="1500" data-animation="bounceInLeft"href="javascript:void(0);">Join our Telegram</a></div>
+                  <a class="blue  hiding" data-delay="1500" data-animation="bounceInLeft" href="https://t.me/bithemoth">Join our Telegram</a></div>
             </div>
             <h1 class="animated hiding">To gain access to our limited presale, please register for our whitelist</h1>
           @else
