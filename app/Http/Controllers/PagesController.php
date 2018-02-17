@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateWhitelist;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -12,7 +13,7 @@ class PagesController extends Controller
         return view('form');
     }
 
-    public function saveForm(Request $request)
+    public function saveForm(CreateWhitelist $request)
     {
         $user = $request->user();
         $user->formData()->create($request->all());

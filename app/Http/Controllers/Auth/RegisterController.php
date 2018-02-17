@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Mail\UserRegistered;
 use App\User;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Cookie;
@@ -84,12 +87,24 @@ class RegisterController extends Controller
         }
         Cookie::queue(Cookie::forget('referral'));
 
-        return User::create([
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
             'affiliate_id' => str_random(16),
             'referred_by' => $ref
         ]);
+
+        $this->sendEmailAfterRegistration($data['email']);
+        return $user;
+    }
+
+    private function sendEmailAfterRegistration($email)
+    {
+        try {
+            Mail::to($email)->send(new UserRegistered());
+        } catch (\Exception $e) {
+            Storage::append('send_user_email_after_registration_error.log', $e->getMessage());
+        }
     }
 }

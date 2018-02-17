@@ -74,7 +74,21 @@
 
         </div>
         <div id="#" class="count-particles">
+
             <div class="form-box1">
+
+                @if($errors->any())
+                    <div class="col-xs-12">
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <ol style="line-height: 1.5; font-size: 16px">{{ $error }}</ol>
+                                @endforeach
+                            </ul>
+                        </div>
+                    </div>
+                @endif
+
                 <div>
                     <h1>Bithemoth Whitelist :</h1>
                     <div id="edit">
@@ -86,6 +100,7 @@
 
                     <div class="clear"></div>
                 </div>
+
                 <div class="form-content">
                     <div class="form-left-pannel">
                         <nav class="" id="myScrollspy">
@@ -435,27 +450,33 @@
                                     (in USD) </label>
                                 <div class="list-box">
                                     <div class="form-group">
-                                        <input type="radio" class="checkbox" id="one" value="USD 100-1000" name="amount_participate">
+                                        <input type="radio" class="checkbox" id="one" value="USD 100-1000"
+                                               name="amount_participate">
                                         <label class="label" for="one">USD 100-1000</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="radio" class="checkbox" id="two" value="USD 1,000-5,000" name="amount_participate">
+                                        <input type="radio" class="checkbox" id="two" value="USD 1,000-5,000"
+                                               name="amount_participate">
                                         <label class="label" for="two">USD 1,000-5,000</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="radio" class="checkbox" id="three" value="USD 5,000-10,000" name="amount_participate">
+                                        <input type="radio" class="checkbox" id="three" value="USD 5,000-10,000"
+                                               name="amount_participate">
                                         <label class="label" for="three">USD 5,000-10,000</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="radio" class="checkbox" id="four" value="USD 10,000-50,000" name="amount_participate">
+                                        <input type="radio" class="checkbox" id="four" value="USD 10,000-50,000"
+                                               name="amount_participate">
                                         <label class="label" for="four">USD 10,000-50,000</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="radio" class="checkbox" id="five" value="USD 50,000-100,000" name="amount_participate">
+                                        <input type="radio" class="checkbox" id="five" value="USD 50,000-100,000"
+                                               name="amount_participate">
                                         <label class="label" for="five">USD 50,000-100,000</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="radio" class="checkbox" value="USD 10,000-50,000" id="six" name="amount_participate">
+                                        <input type="radio" class="checkbox" value="USD 10,000-50,000" id="six"
+                                               name="amount_participate">
                                         <label class="label" for="six">USD 10,000-50,000</label>
                                     </div>
                                     <div class="clear"></div>
@@ -472,27 +493,33 @@
 
                                 <div class="list-box">
                                     <div class="form-group">
-                                        <input type="radio" class="checkbox" id="cm" value="CoinMarketCap.com" name="hear_source">
+                                        <input type="radio" class="checkbox" id="cm" value="CoinMarketCap.com"
+                                               name="hear_source">
                                         <label class="label" for="cm">CoinMarketCap.com</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="radio" class="checkbox" id="twi" value="Twitter" name="hear_source">
+                                        <input type="radio" class="checkbox" id="twi" value="Twitter"
+                                               name="hear_source">
                                         <label class="label" for="twi">Twitter</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="radio" class="checkbox" id="fb" value="Facebook" name="hear_source">
+                                        <input type="radio" class="checkbox" id="fb" value="Facebook"
+                                               name="hear_source">
                                         <label class="label" for="fb">Facebook</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="radio" class="checkbox" id="bt" value="BitcoinTalk" name="hear_source">
+                                        <input type="radio" class="checkbox" id="bt" value="BitcoinTalk"
+                                               name="hear_source">
                                         <label class="label" for="bt">BitcoinTalk</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="radio" class="checkbox" id="redd" value="Reddit" name="hear_source">
+                                        <input type="radio" class="checkbox" id="redd" value="Reddit"
+                                               name="hear_source">
                                         <label class="label" for="redd">Reddit</label>
                                     </div>
                                     <div class="form-group">
-                                        <input type="radio" class="checkbox" id="nw" value="NewsWebsite" name="hear_source">
+                                        <input type="radio" class="checkbox" id="nw" value="NewsWebsite"
+                                               name="hear_source">
                                         <label class="label" for="nw">NewsWebsite</label>
                                     </div>
                                     <div class="clear"></div>
