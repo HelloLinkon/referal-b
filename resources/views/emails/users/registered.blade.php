@@ -16,7 +16,6 @@
                 <tr>
                     <td style="width:100%;margin:0;padding:0;background-color:#f2f4f6" align="center">
                         <table width="100%" cellpadding="0" cellspacing="0">
-
                             <tbody>
                             <tr>
                                 <td style="padding:25px 0;text-align:center">
@@ -26,8 +25,6 @@
                                     </a>
                                 </td>
                             </tr>
-
-
                             <tr>
                                 <td style="width:100%;margin:0;padding:0;border-top:1px solid #edeff2;border-bottom:1px solid #edeff2;background-color:#fff"
                                     width="100%">
