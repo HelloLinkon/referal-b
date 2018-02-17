@@ -30,6 +30,6 @@ class UserRegistered extends Mailable
     {
         return $this->from('info@ref.bithemoth.com')
             ->subject('Welcome to the Bithemoth Community')
-            ->text('emails.users.registered');
+            ->view('emails.users.registered');
     }
 }
