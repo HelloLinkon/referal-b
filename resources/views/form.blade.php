@@ -92,7 +92,7 @@
                 <div>
                     <h1>Bithemoth Whitelist :</h1>
                     <div id="edit">
-                        <p>An all-encompassing exchange platform set to revolutionize the the blockchain market.</p>
+                        <p>We enable you to migrate your business to blockchain.</p>
                         <p>We respect your privacy.</p>
                         <p>Your information wil not be sold or shared.</p>
                         <a class="button" id="btn" style="padding:15px 25px;">Enter Details</a>
@@ -473,11 +473,6 @@
                                         <input type="radio" class="checkbox" id="five" value="USD 50,000-100,000"
                                                name="amount_participate">
                                         <label class="label" for="five">USD 50,000-100,000</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="radio" class="checkbox" value="USD 10,000-50,000" id="six"
-                                               name="amount_participate">
-                                        <label class="label" for="six">USD 10,000-50,000</label>
                                     </div>
                                     <div class="clear"></div>
                                 </div>
