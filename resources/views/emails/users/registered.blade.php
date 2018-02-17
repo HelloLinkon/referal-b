@@ -1,18 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Successful registration</title>
+</head>
+<body>
 <div>
-    <div><u></u>
-
-        <div style="margin:0;padding:0;width:100%;background-color:#f2f4f6">
-            <div style="color:transparent;opacity:0;font-size:0px;border:0;max-height:1px;width:1px;margin:0px;padding:0px;border-width:0px!important;display:none!important;line-height:0px!important">
-                <img border="0" width="1" height="1"
-                     src="https://ci3.googleusercontent.com/proxy/k60oEW2aIBaVdid7QLCWT-Nlm8KtuoFdYsAKcSAXpv6_hZkdQBuYgsHzB1LMb6W0Gbb3TtxMg0-h7WC92ZEPWCEbDZkOuaqMw3FMI3bE4DUxsFJJtw-CLAfmIt8HmRWL1n_93m2tZXynJlNttoBMPpYEyCtRUXbN4jzNIH-vCPT7BdikO2M8WmQqezev9f_1hP5BiKlAExDZc9VE=s0-d-e1-ft#http://go.sparkpostmail1.com/q/XK2Vojq4DSKuF92IGRt2sw~~/AAMp2AA~/RgRcarN6PVcDc3BjWAQAAAAAQgoABnouiFo-KHEjUhJhbmRpcnBhbEBnbWFpbC5jb20~"
-                     class="CToWUd"></div>
-
+    <div style="margin:0;padding:0;width:100%;background-color:#f2f4f6">
+        <div style="color:transparent;opacity:0;font-size:0px;border:0;max-height:1px;width:1px;margin:0px;padding:0px;border-width:0px!important;display:none!important;line-height:0px!important">
             <table width="100%" cellpadding="0" cellspacing="0">
                 <tbody>
                 <tr>
                     <td style="width:100%;margin:0;padding:0;background-color:#f2f4f6" align="center">
                         <table width="100%" cellpadding="0" cellspacing="0">
-
                             <tbody>
                             <tr>
                                 <td style="padding:25px 0;text-align:center">
@@ -22,8 +25,6 @@
                                     </a>
                                 </td>
                             </tr>
-
-
                             <tr>
                                 <td style="width:100%;margin:0;padding:0;border-top:1px solid #edeff2;border-bottom:1px solid #edeff2;background-color:#fff"
                                     width="100%">
@@ -37,9 +38,7 @@
                                                     Hello!
                                                 </h1>
 
-
                                                 <div style="margin-top:0;color:#74787e;font-size:16px;line-height:1.5em">
-                                                    <p><strong>Dear Friend,</strong></p>
                                                     <p>This is a confirmation email verifying that we have received your
                                                         information and that you have been placed on
                                                         our whitelist.
@@ -106,8 +105,6 @@
                                     </table>
                                 </td>
                             </tr>
-
-
                             <tr>
                                 <td>
                                     <table style="width:auto;max-width:570px;margin:0 auto;padding:0;text-align:center"
@@ -135,16 +132,9 @@
                 </tr>
                 </tbody>
             </table>
-
-            <img border="0" width="1" height="1" alt=""
-                 src="https://ci3.googleusercontent.com/proxy/m9iS4saJduGWXVJ1OLC_xjSy-yt-yD1pDjUY7CWUSB9_olVC6ckf6v3cKIdfedua1JelgOHFXBc8K5Y05DUPt8n_jIJDPscGqQTEtP10ArarueUkiSpQzM6q9ge7QeTiKa92hixhk0YuYqG9VqLR5-zE1PsnILnWfQardjNa0dVinw4j5M8rmvouex5Ey54qPUlBZ2ssWcau6y09=s0-d-e1-ft#http://go.sparkpostmail1.com/q/V_z87kl5yAYOC_RhIFnWDA~~/AAMp2AA~/RgRcarN6PlcDc3BjWAQAAAAAQgoABnouiFo-KHEjUhJhbmRpcnBhbEBnbWFpbC5jb20~"
-                 class="CToWUd">
-            <div class="yj6qo"></div>
-            <div class="adL">
-            </div>
-        </div>
-        <div class="adL">
-
         </div>
     </div>
 </div>
+
+</body>
+</html>
