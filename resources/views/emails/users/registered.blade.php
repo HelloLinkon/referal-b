@@ -83,14 +83,7 @@
                                                         on
                                                         Twitter and Telegram, to keep up to date.
                                                     </p>
-                                                    <p><strong>Job Opportunities</strong> – We are looking to expand our
-                                                        team constantly, if you are a developer,
-                                                        influencer, marketer,
-                                                        orf
-                                                        feel like you have any other skills which may be beneficial to
-                                                        our
-                                                        project, feel free to send an email to
-                                                        (email).
+                                                    <p><strong>Job Opportunities</strong> – We are looking to expand our team constantly, if you are a developer, influencer, marketer, or feel like you have any other skills which may be beneficial to our project, feel free to send an email to (email).
                                                         <br>
                                                         <br>
                                                         <strong>Sincerely,</strong>
