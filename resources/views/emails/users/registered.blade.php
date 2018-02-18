@@ -10,7 +10,7 @@
 <body>
 <div>
     <div style="margin:0;padding:0;width:100%;background-color:#f2f4f6">
-        <div style="color:transparent;opacity:0;font-size:0px;border:0;max-height:1px;width:1px;margin:0px;padding:0px;border-width:0px!important;display:none!important;line-height:0px!important">
+        <div>
             <table width="100%" cellpadding="0" cellspacing="0">
                 <tbody>
                 <tr>
