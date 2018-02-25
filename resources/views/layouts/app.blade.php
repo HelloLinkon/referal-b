@@ -48,8 +48,6 @@
             <div class="form-box1">
               @yield('content')
             </div>
-
-
         </div>
 
     </div>
